@@ -5,8 +5,8 @@ Details the approach followed to host a static website using AWS S3,Cloudfront a
 
 ## Install Steps:
 
-	- Our site will be hosted on S3 and served via CloudFront CDN. You will need external access to your AWS resources so it's best to setup a new IAM user with AmazonS3FullAccess and CloudFrontFullAccess policy only.
-	- Hosting on S3:
+  -   Our site will be hosted on S3 and served via CloudFront CDN. You will need external access to your AWS resources so it's best to setup a new IAM user with AmazonS3FullAccess and CloudFrontFullAccess policy only.
+  -   **Hosting on S3:**
 	  	1. Go to S3 in your AWS account.
 	  	2. Create a new bucket on S3
 	  	3. By default your bucket is private and no one can access it so we have to configure it to make it publicly available:
@@ -25,7 +25,7 @@ Details the approach followed to host a static website using AWS S3,Cloudfront a
 						}
 					]
 				}
-	- CloudFront as CDN
+  -   **CloudFront as CDN:**
 		1. Go to CloudFront in your AWS account
 		2. Create a new Web distribution
 		3. Configure your distribution:
